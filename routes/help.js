@@ -1,8 +1,8 @@
 module.exports = app => {
   const help = app.controllers.help;
   /**
-  * @api {get} /help_me
-  * @apiGroup Help_me
+  * @api {get} /help
+  * @apiGroup Help
   * @apiSuccessExample {json} Success
   *    HTTP/1.1 200 OK
   *      {
