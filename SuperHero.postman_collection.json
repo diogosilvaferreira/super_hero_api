@@ -1,0 +1,722 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SuperHero",
+		"_postman_id": "cb99b6ca-ddac-9b9f-4795-72f82018fb7b",
+		"description": "SuperHero API routes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/token",
+			"request": {
+				"url": "http://localhost:3000/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "diogotest",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "uuid",
+							"value": "d9a8871e-1714-11e7-90f1-fec3d6e70254",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user",
+			"request": {
+				"url": "http://localhost:3000/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "teste",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user",
+			"request": {
+				"url": "http://localhost:3000/user",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImQ5YTg4NzFlLTE3MTQtMTFlNy05MGYxLWZlYzNkNmU3MDI1NCIsInJvbGUiOiJBZG1pbiJ9.qNWugzTNi2azWKfj7rCMh924N8MLjdv3DARzRs9u3LQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "diogotest",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user",
+			"request": {
+				"url": "http://localhost:3000/user",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImRpb2dvdGVzdCJ9.KmTzO1Uuw0Xy0BmIcMWZ7bQIe4Xl_4EjtwENLYRQA4Y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "diogotest",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "uuid",
+							"value": "d9a8871e-1714-11e7-90f1-fec3d6e70254",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user",
+			"request": {
+				"url": "http://localhost:3000/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImQ3YjI4OWI2LTE3YTMtMTFlNy05MGYxLWZlYzNkNmU3MDI1NCIsInJvbGUiOiJTdGFuZGFyZCJ9.pf77PMrWLrm7CnDKnesKDZenw6g5cZ7eX9fUDYLjhOI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "diogotest",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/super_hero",
+			"request": {
+				"url": "http://localhost:3000/super_hero",
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImRpb2dvdGVzdCJ9.KmTzO1Uuw0Xy0BmIcMWZ7bQIe4Xl_4EjtwENLYRQA4Y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Batman",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "alias",
+							"value": "Bruce Wayne",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "area",
+							"value": "Gotham",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "-23.56823032684731",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "-46.64500329741625",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/super_hero",
+			"request": {
+				"url": "http://localhost:3000/super_hero",
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImRpb2dvdGVzdCJ9.KmTzO1Uuw0Xy0BmIcMWZ7bQIe4Xl_4EjtwENLYRQA4Y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Batman",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "alias",
+							"value": "Bruce Wayne",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "area",
+							"value": "Gotham",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "-23.56823032684731",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "-46.64500329741625",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/super_hero/:uuid",
+			"request": {
+				"url": "http://localhost:3000/super_hero?uuid=5fd9ef30-1715-11e7-90f1-fec3d6e70254",
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImQ5YTg4NzFlLTE3MTQtMTFlNy05MGYxLWZlYzNkNmU3MDI1NCJ9.ERipfZSmNZxgv4WhUCWCi8_D1SYmlqBGshDc-RxkQOI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Batman",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "alias",
+							"value": "Bruce Wayne",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "area",
+							"value": "Gotham",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "-23.56823032684731",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "-46.64500329741625",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/super_hero",
+			"request": {
+				"url": "http://localhost:3000/super_hero",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImRpb2dvdGVzdCJ9.KmTzO1Uuw0Xy0BmIcMWZ7bQIe4Xl_4EjtwENLYRQA4Y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Batman",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "alias",
+							"value": "Bruce Wayne",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "area",
+							"value": "Gotham",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "-23.56823032684731",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "-46.64500329741625",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "uuid",
+							"value": "5fd9ef30-1715-11e7-90f1-fec3d6e70254",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/super_hero",
+			"request": {
+				"url": "http://localhost:3000/super_hero",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImRpb2dvdGVzdCJ9.KmTzO1Uuw0Xy0BmIcMWZ7bQIe4Xl_4EjtwENLYRQA4Y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "uuid",
+							"value": "5fd9ef30-1715-11e7-90f1-fec3d6e70254",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/super_power",
+			"request": {
+				"url": "http://localhost:3000/super_power",
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImRpb2dvdGVzdCJ9.KmTzO1Uuw0Xy0BmIcMWZ7bQIe4Xl_4EjtwENLYRQA4Y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "x-rayvision",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "description",
+							"value": "superpower x-rayvision loren",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "uuid_superhero",
+							"value": "c5bc51f2-171b-11e7-90f1-fec3d6e70254",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/super_power",
+			"request": {
+				"url": "http://localhost:3000/super_power",
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImRpb2dvdGVzdCJ9.KmTzO1Uuw0Xy0BmIcMWZ7bQIe4Xl_4EjtwENLYRQA4Y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Batman",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "alias",
+							"value": "Bruce Wayne",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "area",
+							"value": "Gotham",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "-23.56823032684731",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "-46.64500329741625",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/super_power/:uuid",
+			"request": {
+				"url": "http://localhost:3000/super_power?uuid=5af61c00-171f-11e7-90f1-fec3d6e70254",
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImRpb2dvdGVzdCJ9.KmTzO1Uuw0Xy0BmIcMWZ7bQIe4Xl_4EjtwENLYRQA4Y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Batman",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "alias",
+							"value": "Bruce Wayne",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "area",
+							"value": "Gotham",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "-23.56823032684731",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "-46.64500329741625",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/super_power",
+			"request": {
+				"url": "http://localhost:3000/super_power",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImRpb2dvdGVzdCJ9.KmTzO1Uuw0Xy0BmIcMWZ7bQIe4Xl_4EjtwENLYRQA4Y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "x-rayvision",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "description",
+							"value": "superpower x-rayvision loren ipsun",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "uuid_superhero",
+							"value": "c5bc51f2-171b-11e7-90f1-fec3d6e70254",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "uuid",
+							"value": "5af61c00-171f-11e7-90f1-fec3d6e70254",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/super_power",
+			"request": {
+				"url": "http://localhost:3000/super_power",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImRpb2dvdGVzdCJ9.KmTzO1Uuw0Xy0BmIcMWZ7bQIe4Xl_4EjtwENLYRQA4Y",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "uuid",
+							"value": "5af61c00-171f-11e7-90f1-fec3d6e70254",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/audit",
+			"request": {
+				"url": "http://localhost:3000/audit",
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImQ5YTg4NzFlLTE3MTQtMTFlNy05MGYxLWZlYzNkNmU3MDI1NCIsInJvbGUiOiJBZG1pbiJ9.qNWugzTNi2azWKfj7rCMh924N8MLjdv3DARzRs9u3LQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Batman",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "alias",
+							"value": "Bruce Wayne",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "area",
+							"value": "Gotham",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "-23.56823032684731",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "-46.64500329741625",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/help/:latitude/:longitude",
+			"request": {
+				"url": "http://localhost:3000/help/?latitude=-23.63560464061405&longitude=-46.6381771588977",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Batman",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "alias",
+							"value": "Bruce Wayne",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "area",
+							"value": "Gotham",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "-23.56823032684731",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "longitude",
+							"value": "-46.64500329741625",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
