@@ -1,7 +1,6 @@
 # Super_Hero API
 
 ## Setup
-
 * Clone this repo: `git clone https://github.com/diogosilvaferreira/super_hero_api.git`
 * Install mysql for localhost
 * Access the folder: `cd super_hero_api`
@@ -18,6 +17,8 @@
 * Import script `_BD/super_hero.sql`
 
 ## Endpoints & DOC
+
+`npm run apidoc` (public/apidoc)
 
 * POST `/user`
 * PUT `/user`
